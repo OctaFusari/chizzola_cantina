@@ -1,0 +1,79 @@
+.menu {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    z-index: 10;
+}
+
+.circles__up {
+    margin-top: -1.5cm;
+    position: absolute;
+    z-index: 0;
+}
+
+.generale {
+    z-index: 50;
+    position: relative;
+}
+
+.top {
+    margin: 6vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". . .";
+}
+
+.img__home__uno {
+    margin-top: -5.5cm;
+    width: 500px;
+}
+
+.top__centro {
+    text-align: center;
+}
+
+.top__destra {
+    margin-top: 2vw;
+}
+
+.top__descrizione {
+    margin: 4vw 1vw 2vw 1vw;
+}
+
+.mini__carousel {
+    display: flex;
+    margin-top: -2cm;
+}
+
+.mini__carousel div {
+    width: 150px;
+    height: 380px;
+}
+
+.mini__carousel img {
+    transform: rotate(10deg);
+    -ms-transform-origin: 0 100%;
+    transform-origin: 0 100% 0;
+    margin: 2vw 0vw 2vw 0vw;
+    width: 50px;
+}
+
+.home__vino__due {
+    margin-top: 2cm;
+}
+
+.mini__carousel div:hover img {
+    width: 60px;
+}
+
+.mini__carousel div span {
+    opacity: 0;
+}
+
+.mini__carousel div:hover span {
+    opacity: 1;
+}

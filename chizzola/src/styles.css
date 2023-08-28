@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "AbrilFatface-Regular";
+    src: local("AbrilFatface-Regular"), url(./assets/fonts/AbrilFatface-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url(./assets/fonts/Montserrat-BlackItalic.ttf) format("truetype");
+}
+
+body,
+html {
+    background: var(--background);
+    padding: 2vw;
+}
+
+* {
+    transition-duration: .3s;
+}
+
+.octitxt1 {
+    cursor: pointer;
+    fill: #3b3b3b44;
+}
+
+.octitxt1:hover {
+    cursor: pointer;
+    fill: var(--text-minor)
+}
+
+:root {
+    --background: #171e25;
+    --text-white: #d6d6d6;
+    --text: #d6d6d6;
+    --text-little: #a0a0a0;
+    --text-minor: #bf9341;
+    --text-minor-tras: #bf934188;
+    --card: #1b242e;
+    --card-trasparent: #1b242e75;
+    --container: #171f27;
+    --container-trasparent: #1818189d;
+    --allert: #fbab00;
+    --error: #fb0000;
+    --error-trasparent: #fb000087;
+    --approved: #00c42a;
+    --octimal: #007E6D;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0;
+    font-family: "AbrilFatface-Regular";
+}
+
+p,
+a,
+span {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-white);
+}
+
+.text__yellow {
+    color: var(--text-minor);
+}
+
+.text__semiyellow {
+    color: var(--text-minor-tras);
+}
+
+.text__white {
+    color: var(--text);
+}
+
+.h1__big {
+    font-size: 5rem;
+}
+
+.h1__medium {
+    font-size: 4rem;
+}
+
+.h1__little {
+    font-size: 3rem;
+}
