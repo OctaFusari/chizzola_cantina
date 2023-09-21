@@ -9,7 +9,7 @@
 }
 
 .circles__up {
-    margin-top: -1.5cm;
+    margin-top: -3cm;
     position: absolute;
     z-index: 0;
 }
@@ -22,7 +22,7 @@
 .top {
     margin: 6vw;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 400px auto 400px;
     grid-template-rows: 1fr;
     grid-template-areas: ". . .";
 }
@@ -37,11 +37,27 @@
 }
 
 .top__destra {
-    margin-top: 2vw;
+    margin: 2vw 0vw 0vw 4vw;
 }
 
 .top__descrizione {
-    margin: 4vw 1vw 2vw 1vw;
+    margin: 8vw 1vw 4vw 1vw;
+}
+
+.button__custom__top__home{
+    margin: 6vw 0 0 2vw;
+    width: 2.6cm;
+    height: 2.6cm;
+    border-radius: 100%;
+    border: 2px solid var(--text-minor-tras);
+    background-color: var(--background);
+    cursor: pointer;
+}
+
+.button__custom__top__home:hover{
+    width: 3cm;
+    height: 3cm;
+    background-color: var(--text-minor-tras);
 }
 
 .mini__carousel {
@@ -76,4 +92,20 @@
 
 .mini__carousel div:hover span {
     opacity: 1;
+}
+
+
+/* CORPO */
+
+
+.corpo__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.corpo__top__descrizione{
+    margin: 10vw 18vw 10vw 18vw;
 }

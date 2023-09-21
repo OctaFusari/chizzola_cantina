@@ -87,3 +87,18 @@ span {
 .h1__little {
     font-size: 3rem;
 }
+
+.cartellino{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--text-minor);
+    border-radius: 1.6rem;
+    width: fit-content;
+}
+
+.cartellino h3{
+    color: var(--text-white);
+    margin: 10px 16px 10px 16px;
+}
