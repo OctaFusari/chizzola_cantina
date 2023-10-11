@@ -8,10 +8,16 @@
     src: local("Montserrat"), url(./assets/fonts/Montserrat-BlackItalic.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "HindSiliguri-Light";
+    src: local("HindSiliguri-Light"), url(./assets/fonts/Hind_Siliguri/HindSiliguri-Light.ttf) format("truetype");
+}
+
 body,
 html {
     background: var(--background);
-    padding: 2vw;
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -29,16 +35,11 @@ html {
 }
 
 :root {
-    --background: #171e25;
-    --text-white: #d6d6d6;
-    --text: #d6d6d6;
-    --text-little: #a0a0a0;
-    --text-minor: #bf9341;
-    --text-minor-tras: #bf934188;
-    --card: #1b242e;
-    --card-trasparent: #1b242e75;
-    --container: #171f27;
-    --container-trasparent: #1818189d;
+    --background: #ffefd8;
+    --text: #3b332c;
+    --text_trasp: #ffefd8be;
+    --card: #fdf7ee;
+    --container: #fde8c9;
     --allert: #fbab00;
     --error: #fb0000;
     --error-trasparent: #fb000087;
@@ -53,7 +54,7 @@ h4,
 h5,
 h6 {
     margin: 8px 0;
-    font-family: "AbrilFatface-Regular";
+    font-family: "HindSiliguri-Light";
 }
 
 p,
@@ -77,18 +78,18 @@ span {
 }
 
 .h1__big {
-    font-size: 5rem;
-}
-
-.h1__medium {
     font-size: 4rem;
 }
 
-.h1__little {
+.h1__medium {
     font-size: 3rem;
 }
 
-.cartellino{
+.h1__little {
+    font-size: 2rem;
+}
+
+.cartellino {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -98,7 +99,7 @@ span {
     width: fit-content;
 }
 
-.cartellino h3{
+.cartellino h3 {
     color: var(--text-white);
     margin: 10px 16px 10px 16px;
 }

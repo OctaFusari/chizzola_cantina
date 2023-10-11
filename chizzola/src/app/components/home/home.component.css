@@ -1,111 +1,35 @@
-.menu {
-    position: fixed;
-    top: 40px;
-    right: 40px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: right;
-    z-index: 10;
-}
-
-.circles__up {
-    margin-top: -3cm;
-    position: absolute;
+#background-video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: 0;
 }
 
-.generale {
-    z-index: 50;
+.video-container {
     position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.top {
-    margin: 6vw;
-    display: grid;
-    grid-template-columns: 400px auto 400px;
-    grid-template-rows: 1fr;
-    grid-template-areas: ". . .";
-}
-
-.img__home__uno {
-    margin-top: -5.5cm;
-    width: 500px;
-}
-
-.top__centro {
+.descrizione__home {
+    width: 8cm;
+    z-index: 1;
+    position: absolute;
+    margin: 8vw;
     text-align: center;
+    color: var(--text)
 }
 
-.top__destra {
-    margin: 2vw 0vw 0vw 4vw;
-}
-
-.top__descrizione {
-    margin: 8vw 1vw 4vw 1vw;
-}
-
-.button__custom__top__home{
-    margin: 6vw 0 0 2vw;
-    width: 2.6cm;
-    height: 2.6cm;
-    border-radius: 100%;
-    border: 2px solid var(--text-minor-tras);
-    background-color: var(--background);
-    cursor: pointer;
-}
-
-.button__custom__top__home:hover{
-    width: 3cm;
-    height: 3cm;
-    background-color: var(--text-minor-tras);
-}
-
-.mini__carousel {
-    display: flex;
-    margin-top: -2cm;
-}
-
-.mini__carousel div {
-    width: 150px;
-    height: 380px;
-}
-
-.mini__carousel img {
-    transform: rotate(10deg);
-    -ms-transform-origin: 0 100%;
-    transform-origin: 0 100% 0;
-    margin: 2vw 0vw 2vw 0vw;
-    width: 50px;
-}
-
-.home__vino__due {
-    margin-top: 2cm;
-}
-
-.mini__carousel div:hover img {
-    width: 60px;
-}
-
-.mini__carousel div span {
-    opacity: 0;
-}
-
-.mini__carousel div:hover span {
-    opacity: 1;
-}
-
-
-/* CORPO */
-
-
-.corpo__top{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 800px;
-}
-
-.corpo__top__descrizione{
-    margin: 10vw 18vw 10vw 18vw;
+.gray-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--text_trasp);
+    /* Gray color with 50% opacity */
+    pointer-events: none;
+    /* Allow interactions with video controls */
 }
