@@ -14,9 +14,9 @@
 }
 
 .descrizione__home {
-    width: 8cm;
+    width: 12cm;
     z-index: 1;
-    position: absolute;
+    position: fixed;
     margin: 8vw;
     text-align: center;
     color: var(--text)
@@ -29,7 +29,57 @@
     width: 100%;
     height: 100%;
     background-color: var(--text_trasp);
-    /* Gray color with 50% opacity */
     pointer-events: none;
-    /* Allow interactions with video controls */
+}
+
+.who {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.who__background {
+    background: var(--background);
+    margin-top: -16cm;
+    margin-left: -6cm;
+    width: 120%;
+    height: 40cm;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-16deg);
+    transform-origin: top center;
+    border: 2px solid var(--background);
+    box-sizing: border-box;
+}
+
+.disegno__uno__container {
+    grid-area: disegno__uno__container;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    margin-top: -4cm;
+}
+
+.disegno__uno {
+    width: 6cm;
+    height: 6cm;
+}
+
+.who__content {
+    width: 100%;
+    margin-top: -16cm;
+    position: absolute;
+    z-index: 2;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". disegno__uno__container who__content__interno";
+}
+
+.who__content__interno {
+    grid-area: who__content__interno;
+    width: 9.9cm;
 }
