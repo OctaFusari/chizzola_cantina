@@ -37,13 +37,14 @@ html {
 
 .octitxt1:hover {
     cursor: pointer;
-    fill: var(--text-minor)
+    fill: var(--octimal)
 }
 
 :root {
     --background: #ffefd8;
     --text: #3b332c;
-    --text_trasp: #ffefd8be;
+    --text_trasp: #3b332cdc;
+    --background_trasp: #ffefd8be;
     --card: #fdf7ee;
     --container: #fde8c9;
     --allert: #fbab00;
@@ -68,6 +69,8 @@ h5 {
 }
 
 span {
+    color: var(--text_trasp);
+    font-style: italic;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
