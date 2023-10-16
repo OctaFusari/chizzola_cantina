@@ -3,3 +3,33 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.creazione {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.container__app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.menu__logo {
+    width: 30cm !important;
+    margin-top: 3cm;
+    margin-left: -20px;
+    transform: rotate(-1deg);
+    z-index: 1;
+    opacity: .4;
+}
+
+.logo {
+    text-align: center;
+}

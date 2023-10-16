@@ -57,14 +57,6 @@ main {
     z-index: 2;
 }
 
-.menu__logo {
-    width: 40cm !important;
-    transform: rotate(-16deg);
-    position: fixed;
-    margin-left: -30cm;
-    z-index: 1;
-}
-
 .menu-opened {
     top: 0;
     z-index: 3;
