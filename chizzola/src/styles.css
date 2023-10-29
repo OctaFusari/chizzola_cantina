@@ -18,6 +18,16 @@
     src: local("HindSiliguri-Regular"), url(./assets/fonts/Hind_Siliguri/HindSiliguri-Regular.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "NotoSans-ExtraLight";
+    src: local("NotoSans-ExtraLight"), url(./assets/fonts/Noto_Sans/NotoSans-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "NotoSans-Light";
+    src: local("NotoSans-Light"), url(./assets/fonts/Noto_Sans/NotoSans-Light.ttf) format("truetype");
+}
+
 body,
 html {
     background: var(--background);
@@ -32,7 +42,7 @@ html {
 
 .octitxt1 {
     cursor: pointer;
-    fill: #3b3b3b44;
+    fill: #3b3b3b2a;
 }
 
 .octitxt1:hover {
@@ -41,9 +51,9 @@ html {
 }
 
 :root {
-    --background: #ffefd8;
-    --text: #3b332c;
-    --text_trasp: #3b332cdc;
+    --background: #E8E8E3;
+    --text: #55534C;
+    --text_trasp: #55534ce1;
     --background_trasp: #ffefd8be;
     --card: #fdf7ee;
     --container: #fde8c9;
@@ -60,12 +70,13 @@ h3,
 h4,
 h5 {
     font-family: "HindSiliguri-Light" !important;
-    letter-spacing: 8px;
+    color: var(--text);
 }
 
 * {
     margin: 0;
-    font-family: "HindSiliguri-Regular";
+    font-family: "NotoSans-Light";
+    color: var(--text);
 }
 
 span {
@@ -88,11 +99,12 @@ span {
 
 .h1__big {
     font-size: 4rem;
-    letter-spacing: 16px;
+    letter-spacing: 22px;
 }
 
 .h1__medium {
     font-size: 3rem;
+    letter-spacing: 22px;
 }
 
 .h1__little {
