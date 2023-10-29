@@ -11,7 +11,7 @@ export class ViniComponent {
     window.addEventListener('scroll', function () {
       const parallaxBg:any = document.querySelector('.parallax-bg');
       const scrollValue = window.scrollY;
-      parallaxBg.style.transform = `translateY(${scrollValue * 0.3}px)`; // Adjust the multiplier to control the parallax effect
+      parallaxBg.style.transform = `translateY(${scrollValue * 0.006}cm)`; // Adjust the multiplier to control the parallax effect
   }); 
   }
 

@@ -32,4 +32,6 @@
 
 .logo {
     text-align: center;
+    z-index: 900;
+    position: sticky;
 }
