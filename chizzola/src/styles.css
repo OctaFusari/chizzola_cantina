@@ -34,6 +34,7 @@ html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -42,12 +43,12 @@ html {
 
 .octitxt1 {
     cursor: pointer;
-    fill: #3b3b3b2a;
+    fill: #e8e8e31a;
 }
 
 .octitxt1:hover {
     cursor: pointer;
-    fill: var(--octimal)
+    fill: #e8e8e349;
 }
 
 :root {
@@ -128,4 +129,8 @@ span {
 
 .mini__container {
     margin: .4cm;
+}
+
+.logo * {
+    color: var(--background) !important;
 }

@@ -31,7 +31,58 @@
 }
 
 .logo {
-    text-align: center;
+    background-color: var(--text);
     z-index: 900;
     position: sticky;
+    height: fit-content;
+    color: var(--background) !important;
+}
+
+.footer__interno {
+    display: flex;
+    /* or display: inline-flex; */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.footer__interno section div {
+    margin: 1vw;
+}
+
+.footer__interno section {
+    padding: 6vw 6vw 2vw 6vw;
+}
+
+.chizzola__logo_footer {
+    text-align: center;
+}
+
+.chizzola__logo_footer h1 {
+    margin-left: 16px;
+}
+
+.chizzola__logo_footer img {
+    width: 10vw;
+}
+
+.octimal__logo__footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .chizzola__logo_footer h1 {
+        font-size: 2rem !important;
+    }
+    .chizzola__logo_footer h4 {
+        font-size: .8rem !important;
+    }
+    .footer__interno {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "fi__2""fi__1";
+    }
 }
